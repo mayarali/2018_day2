@@ -1,5 +1,4 @@
 import numpy as np
-import matplotlib.pyplot as plt
 from maxima import find_maxima
 
 
@@ -7,7 +6,7 @@ def test_maxima(x, y, fn):
     result = (y == fn(x))
     print('x =', x, ', result:', result)
     if(not result):
-        print('expected:', y, ', but found:', find_maxima(y1))
+        print('expected:', y, ', but found:', find_maxima(y))
 
 
 x1 = [0, 1, 2, 1, 2, 1, 0]
